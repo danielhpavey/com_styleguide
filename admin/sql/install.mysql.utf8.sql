@@ -9,7 +9,7 @@ ALTER TABLE #__styleguide
 ALTER TABLE #__styleguide
     MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 
-INSERT INTO #__styleguide ( 'content' )
+INSERT INTO #__styleguide ( content )
 values (
 '<h1>H1 Header</h1>
 <h2>H2 Header</h2>

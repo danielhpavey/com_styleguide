@@ -11,7 +11,26 @@ ALTER TABLE #__styleguide
 
 INSERT INTO #__styleguide ( content )
 values (
-'<h1>H1 Header</h1>
+'<style>
+.styleguide-colorblock{
+   display:flex;
+}
+.styleguide-colorblock li{
+    display:block;
+  height:200px;
+  width:100%;
+  border:1px solid;
+  margin:5px;
+}
+</style>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script>
+$(".styleguide-colorblock li").each(function(){
+    $(this).css("background", $(this).attr("data-color"));
+});
+</script>
+
+<h1>H1 Header</h1>
 <h2>H2 Header</h2>
 <h3>H3 Header</h3>
 <h4>H4 Header</h4>
@@ -26,5 +45,27 @@ values (
 <li>List Item</li>
 <li>List Item</li>
 <li>List Item</li>
-</ul>'
+</ul>
+
+<h1>Colours</h1>
+
+<ul class = "styleguide-colorblock">
+<li data-color="red">
+</li>
+<li data-color="white">
+</li>
+<li data-color="blue">
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+<button>Button</button>
+
+<label>Label</label>
+<input type = "text" placeholder="Text Input" />'
 );

@@ -28,7 +28,12 @@ class StyleGuideModelStyleGuide extends JModelList
         $object = new stdClass();
 
         $object -> id = $jinput -> get ("id");
-        $object -> content = $jinput -> get ("content", '', 'RAW' );
+        $object -> content = htmlentities( $jinput -> get ("content", '', 'RAW' ) );
+        $object -> colour1 = $jinput -> get ("colour1", '', 'RAW' );
+        $object -> colour2 = $jinput -> get ("colour2", '', 'RAW' );
+        $object -> colour3 = $jinput -> get ("colour3", '', 'RAW' );
+        $object -> colour4 = $jinput -> get ("colour4", '', 'RAW' );
+        $object -> colour5 = $jinput -> get ("colour5", '', 'RAW' );
 
         $result = JFactory::getDbo()->updateObject('#__styleguide', $object, 'id');
 

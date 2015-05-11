@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS #__styleguide;
+DROP TABLE #__styleguide;
 
 CREATE TABLE IF NOT EXISTS `#__styleguide` (
 `id` int(11) NOT NULL,

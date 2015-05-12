@@ -69,7 +69,8 @@ This is a blockquote. Nunc non sagittis libero. Pellentesque habitant morbi tris
 &lt;input type = &quot;text&quot; placeholder=&quot;Text Input&quot; /&gt;
 &lt;label&gt;Label&lt;/label&gt;
 &lt;textarea&gt;This is a textarea&lt;/textarea&gt;
-
+&lt;/fieldset&gt;
+&lt;fieldset&gt;
 &lt;button&gt;Button&lt;/button&gt;
 &lt;/fieldset&gt;', 'red', 'orange', 'yellow', 'green', 'blue');
 
